@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Do Transaction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css"
+	th:href="@{bootstrap.min.css}" />
+</head>
+<body>
+	<h1>Cancel Transaction</h1>
+	<div>
+		<form th:object="${transaction}" th:action="@{cancel}" action="#" method="post">
+		<!-- <input type="text" required="required" th:field="*{transactionId}" class="form-control" placeholder="transactionId" /> -->
+		<select th:field="*{transactionId}" required="required">
+		<option value="" selected="selected">Select a Transaction</option>
+             <option th:each="dropDownItem : ${transactionsList}"
+                             th:value="${dropDownItem.transactionId}"
+                             th:text="${dropDownItem.transactionId}" ></option>
+         </select>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<!-- <input type="text" th:field="*{transactionType}" class="form-control" placeholder="TransactionType" /> -->
+		<select th:field="*{transactionType}">
+				<div>
+					<option selected="selected" value="DEBIT">DEBIT</option>
+					<option value="CREDIT">CREDIT</option>
+				</div>
+			</select>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<input type="submit" class="btn btn-success" value="Submit"></input>
+		</form>
+	</div>
+</body>
+</html>

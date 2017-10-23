@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Do Transaction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css"
+	th:href="@{bootstrap.min.css}" />
+</head>
+<body>
+	<h1>New Transaction</h1>
+	<div>
+		<form th:object="${transaction}" th:action="@{save}" action="#" method="post">
+		<input type="text" th:field="*{customerId}" class="form-control" placeholder="CustomerId" />
+		<label th:if="${#fields.hasErrors('customerId')}" th:errors="*{customerId}">CustomerID Error</label>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<input type="text" th:field="*{amount}" class="form-control" placeholder="Amount" />
+		<label th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}">Amount Error</label>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<select th:field="*{transactionType}">
+				<div>
+					<option selected="selected" value="DEBIT">DEBIT</option>
+					<option value="CREDIT">CREDIT</option>
+				</div>
+			</select>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<input type="submit" class="btn btn-success" value="Submit"></input>
+		</form>
+	</div>
+</body>
+</html>

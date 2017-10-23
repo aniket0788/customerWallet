@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Customer List</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css"
+	th:href="@{bootstrap.min.css}" />
+</head>
+<body>
+	<h1>Transactions</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>Transaction ID</th>
+			<th>Customer ID</th>
+			<th>Amount</th>
+			<th>Transaction Type</th>
+			<th>TimeStamp</th>
+			<th>Status</th>
+		</tr>
+		<tr th:each="transaction: ${transactions}">
+			<td th:text="${transaction.transactionId}"></td>
+			<td th:text="${transaction.customerId}"></td>
+			<td th:text="${transaction.amount}"></td>
+			<td th:text="${transaction.transactionType}"></td>
+			<td th:text="${#dates.format(transaction.timeStamp, 'dd-MMM-yyyy hh:mm:ss')}"></td>
+			<td th:text="${transaction.status}"></td>
+			<td><a th:if="${transaction.status.equalsIgnoreCase('cancelled')}" th:href="@{/delete/{transactionId}(transactionId=${transaction.transactionId})}" class="btn btn-danger">Delete</a></td>
+		</tr>
+	</table>
+	<a href="/createTransaction" class="btn btn-success">Add Transaction</a>
+	<a href="/cancelTransaction" class="btn btn-success">Cancel Transaction</a>
+	<a href="/calTotalBal" class="btn btn-success">Calculate Total Balance</a>
+	<a href="/viewPassbook" class="btn btn-success">View Passbook</a>
+	
+</body>
+</html>

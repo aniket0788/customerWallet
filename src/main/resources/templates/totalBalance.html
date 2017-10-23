@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Do Transaction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css"
+	th:href="@{bootstrap.min.css}" />
+</head>
+<body>
+	<h1>Get Balance</h1>
+	<div>
+		<form th:object="${transaction}" th:action="@{balance}" action="#" method="post">
+		<input type="text" th:field="*{customerId}" class="form-control" placeholder="customerId" />
+		<label th:if="${#fields.hasErrors('customerId')}" th:errors="*{customerId}">CustomerID Error</label>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<label th:if="${data !=null}" th:text="'Total Balance = ' + ${data}"></label>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<input type="hidden" name="amount" id="amount" th:value = "0" />
+		<input type="submit" class="btn btn-success" value="Submit"></input>
+		<a href="/" class="btn btn-info">Home</a>
+		</form>
+	</div>
+</body>
+</html>

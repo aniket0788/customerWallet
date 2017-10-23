@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Do Transaction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css"
+	th:href="@{bootstrap.min.css}" />
+</head>
+<body>
+	<h1>View Passbook</h1>
+	<div>
+		<form th:object="${transaction}" th:action="@{passbook}" action="#" method="post">
+		<input type="text" th:field="*{customerId}" class="form-control" placeholder="customerId" />
+		<label th:if="${#fields.hasErrors('customerId')}" th:errors="*{customerId}">CustomerID Error</label>
+		<div style="clear: both; display: block; height: 10px;"></div>
+		<input type="hidden" name="amount" id="amount" th:value = "0" />
+		<input type="submit" class="btn btn-success" value="Submit"></input>
+		<a href="/" class="btn btn-info">Home</a>
+		</form>
+	</div>
+	<div th:if="${not #lists.isEmpty(transactions)}">
+	<table class="table table-striped">
+		<tr>
+			<th>Transaction ID</th>
+			<th>Transaction Type</th>
+			<th>Amount</th>
+			<th>TimeStamp</th>
+			<th>Status</th>
+		</tr>
+		<tr th:each="transaction: ${transactions}">
+			<td th:text="${transaction.transactionId}"></td>
+			<td th:text="${transaction.transactionType}"></td>
+			<td th:text="${transaction.amount}"></td>
+			<td th:text="${transaction.timeStamp}"></td>
+			<td th:text="${transaction.status}"></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
