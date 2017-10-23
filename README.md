@@ -10,6 +10,7 @@
 #NOTE
 
 - server would start on port 8085. Please change server.port in application.properties, if you want to run it on a different port.
-- Used inbuilt database H2 provided by SpringBoot and it would be available at runtime of the application. Dependency is added in Maven.
+http://localhost:8085/
+- Used inbuilt database H2 provided by SpringBoot and it would be available at runtime of the application. Dependency is added in maven's pom.xml
 
 
