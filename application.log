@@ -35,4 +35,86 @@
 ""2017-10-23 08:45:57 [Thread-32] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2017-10-23 08:45:57 [Thread-32] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
 ""2017-10-23 08:45:57 [Thread-32] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2017-10-23 09:03:08 [restartedMain] INFO  com.wallet.WalletApplication - Starting WalletApplication on Mac.local with PID 11353 (/Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet/target/classes started by aniketsingh in /Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet)
+""2017-10-23 09:03:08 [restartedMain] DEBUG com.wallet.WalletApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+""2017-10-23 09:03:08 [restartedMain] INFO  com.wallet.WalletApplication - No active profile set, falling back to default profiles: default
+""2017-10-23 09:03:08 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@546c3a3f: startup date [Mon Oct 23 09:03:08 IST 2017]; root of context hierarchy
+""2017-10-23 09:03:10 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8085 (http)
+""2017-10-23 09:03:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-10-23 09:03:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'webServlet' to [/h2-console/*]
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-10-23 09:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-10-23 09:03:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-10-23 09:03:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-10-23 09:03:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-10-23 09:03:11 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-10-23 09:03:11 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-10-23 09:03:11 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-10-23 09:03:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""2017-10-23 09:03:12 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2017-10-23 09:03:12 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2017-10-23 09:03:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-10-23 09:03:12 [restartedMain] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet/target/classes/data-h2.sql]
+""2017-10-23 09:03:12 [restartedMain] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet/target/classes/data-h2.sql] in 56 ms.
+""2017-10-23 09:03:13 [restartedMain] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2017-10-23 09:03:14 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2017-10-23 09:03:14 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-10-23 09:03:14 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8085 (http)
+""2017-10-23 09:03:14 [restartedMain] INFO  com.wallet.WalletApplication - Started WalletApplication in 5.989 seconds (JVM running for 7.466)
+""2017-10-23 09:03:21 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-10-23 09:03:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2017-10-23 09:03:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@546c3a3f: startup date [Mon Oct 23 09:03:08 IST 2017]; root of context hierarchy
+""2017-10-23 09:03:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-10-23 09:03:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2017-10-23 09:03:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2017-10-23 09:03:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2017-10-23 09:11:39 [main] INFO  com.wallet.WalletApplication - Starting WalletApplication on Mac.local with PID 11381 (/Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet/target/classes started by aniketsingh in /Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet)
+""2017-10-23 09:11:39 [main] DEBUG com.wallet.WalletApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+""2017-10-23 09:11:39 [main] INFO  com.wallet.WalletApplication - No active profile set, falling back to default profiles: default
+""2017-10-23 09:11:39 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@709ba3fb: startup date [Mon Oct 23 09:11:39 IST 2017]; root of context hierarchy
+""2017-10-23 09:11:41 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8085 (http)
+""2017-10-23 09:11:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-10-23 09:11:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+""2017-10-23 09:11:41 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-10-23 09:11:41 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-10-23 09:11:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-10-23 09:11:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-10-23 09:11:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-10-23 09:11:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-10-23 09:11:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-10-23 09:11:42 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-10-23 09:11:42 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-10-23 09:11:42 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-10-23 09:11:42 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-10-23 09:11:42 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-10-23 09:11:42 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""2017-10-23 09:11:43 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2017-10-23 09:11:43 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+""2017-10-23 09:11:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-10-23 09:11:43 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet/target/classes/data-h2.sql]
+""2017-10-23 09:11:43 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/Users/aniketsingh/Documents/workspace-sts-3.9.0.RELEASE/customerWallet/target/classes/data-h2.sql] in 24 ms.
+""2017-10-23 09:11:43 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2017-10-23 09:11:44 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-10-23 09:11:44 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8085 (http)
+""2017-10-23 09:11:44 [main] INFO  com.wallet.WalletApplication - Started WalletApplication in 5.383 seconds (JVM running for 6.909)
+""2017-10-23 09:11:56 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-10-23 09:12:07 [http-nio-8085-exec-7] INFO  c.wallet.service.TransactionService - Saved Transaction: [transactionId=6, customerId=123, amount=5000.0, transactionType=DEBIT, timeStamp=2017-10-23 09:12:07.86, status=ACTIVE]
+""2017-10-23 09:12:18 [http-nio-8085-exec-4] WARN  c.wallet.controller.WalletController - Cancelled transaction with Transaction Id: 3
+""2017-10-23 09:12:29 [http-nio-8085-exec-8] WARN  c.wallet.controller.WalletController - Cancelled transaction with Transaction Id: 5
+""2017-10-23 09:12:38 [http-nio-8085-exec-1] WARN  c.wallet.controller.WalletController - Cancelled transaction with Transaction Id: 5
+""2017-10-23 09:12:45 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2017-10-23 09:12:45 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@709ba3fb: startup date [Mon Oct 23 09:11:39 IST 2017]; root of context hierarchy
+""2017-10-23 09:12:45 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-10-23 09:12:45 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2017-10-23 09:12:45 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+""2017-10-23 09:12:45 [RMI TCP Connection(2)-127.0.0.1] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
 "
