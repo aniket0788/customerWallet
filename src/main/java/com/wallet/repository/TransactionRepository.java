@@ -17,7 +17,13 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
 
 	Boolean delete(long transactionId);
 
-	@Query("select (select sum(amount) from Transaction where customerId = ?1 and transactionType='CREDIT') - (select sum(amount) from Transaction where customerId = ?1 and transactionType='DEBIT') from Transaction")
+	@Query("select distinct(coalesce((select sum(amount) from Transaction where customerId \n" + 
+			"= ?1 and transactionType='CREDIT' and status ='ACTIVE'),0) \n" + 
+			"- \n" + 
+			"coalesce((select sum(amount) from Transaction where \n" + 
+			"customerId = ?1 and transactionType='DEBIT' \n" + 
+			"and status ='ACTIVE'),0))\n" + 
+			"from Transaction")
 	Double sumAmountByCustomerId(int customerId);
 
 	List<Transaction> findByCustomerId(Integer customerId);
